@@ -1,0 +1,27 @@
+{
+  "name": "ui-state-capture",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --loader ts-node/esm src/index.ts",
+    "install-browsers": "npx playwright install",
+    "bootstrap:linear": "node --loader ts-node/esm src/bootstrap-auth.ts linear",
+    "bootstrap:notion": "node --loader ts-node/esm src/bootstrap-auth.ts notion",
+    "bootstrap:asana": "node --loader ts-node/esm src/bootstrap-auth.ts asana",
+    "run:task": "node --loader ts-node/esm src/runner.ts",
+    "build": "tsc",
+    "run:compiled": "node dist/src/runner.js"
+  },
+  "devDependencies": {
+    "dotenv": "^16.6.1",
+    "playwright": "^1.56.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^2.0.59",
+    "ai": "^5.0.86",
+    "openai": "^6.7.0"
+  }
+}

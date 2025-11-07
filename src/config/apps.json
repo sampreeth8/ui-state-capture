@@ -1,0 +1,5 @@
+{
+  "notion": { "baseUrl": "https://www.notion.so", "authPath": "src/auth/notion.json" },
+  "linear": { "baseUrl": "https://linear.app", "authPath": "src/auth/linear.json" },
+  "asana": { "baseUrl": "https://app.asana.com" , "authPath": "src/auth/asana.json" }
+}
